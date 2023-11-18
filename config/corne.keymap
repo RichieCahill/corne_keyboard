@@ -134,7 +134,7 @@
     base {
       bindings = <
         &soh 4 TAB        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
-        &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMICOLON  &kp APOS
+        &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMICOLON  &hmr RIGHT_SHIFT SINGLE_QUOTE
         &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
                                         &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
       >;
@@ -144,10 +144,10 @@
 
     raise {
       bindings = <
-        &trans  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5    &kp N6  &kp N7          &kp N8        &kp N9          &kp N0           &trans
-        &trans  &trans  &trans  &trans        &trans  &trans    &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-        &kp F1  &kp F2  &kp F3  &kp F4        &kp F5  &kp F6    &kp F7  &kp F8          &kp F9        &kp F10         &kp F11          &kp F12
-                                &kp LEFT_ALT  &mo 3   &trans    &trans  &trans          &trans
+        &trans  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5            &kp N6  &kp N7          &kp N8        &kp N9          &kp N0           &trans
+        &trans  &trans  &trans  &trans        &trans  &trans            &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+        &kp F1  &kp F2  &kp F3  &kp F4        &kp F5  &kp F6            &kp F7  &kp F8          &kp F9        &kp F10         &kp F11          &kp F12
+                                &kp LEFT_ALT  &mo 3   &kp UNDERSCORE    &trans  &trans          &trans
       >;
 
       label = "raise";
@@ -188,10 +188,10 @@
 
     autoshift {
       bindings = <
-        &trans  &as Q  &as W  &as E   &as R   &as T             &as Y   &as U   &as I   &as O   &as P   &trans
-        &trans  &as A  &as S  &as D   &as F   &as G             &as H   &as J   &as K   &as L   &trans  &trans
-        &trans  &as Z  &as X  &as C   &as V   &as B             &as N   &as M   &trans  &trans  &trans  &trans
-                              &trans  &trans  &kp UNDERSCORE    &trans  &trans  &trans
+        &trans  &as Q  &as W  &as E   &as R   &as T     &as Y   &as U   &as I   &as O   &as P   &trans
+        &trans  &as A  &as S  &as D   &as F   &as G     &as H   &as J   &as K   &as L   &trans  &trans
+        &trans  &as Z  &as X  &as C   &as V   &as B     &as N   &as M   &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
   };
